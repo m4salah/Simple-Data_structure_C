@@ -1,9 +1,9 @@
-#define MAX_SIZE 1024
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 
 #define INIT_LENGTH 4
+#define MAX_SIZE 1024
 
 typedef struct {
     int *array;
