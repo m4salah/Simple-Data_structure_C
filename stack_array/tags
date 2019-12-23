@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/3fdf28bc/
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=$/;"	m
+MAXSIZE	stack.h	/^#define MAXSIZE /;"	d
+OUT	Makefile	/^OUT=stack$/;"	m
+RM	Makefile	/^RM=rm -rf$/;"	m
+Stack	stack.h	/^} Stack;$/;"	t	typeref:struct:__anonadd2b0f10108
+StackEntry	stack.h	/^typedef char StackEntry;$/;"	t	typeref:typename:char
+__anonadd2b0f10108	stack.h	/^typedef struct {$/;"	s
+arr	stack.h	/^    StackEntry arr[MAXSIZE];$/;"	m	struct:__anonadd2b0f10108	typeref:typename:StackEntry[]
+clean	Makefile	/^clean: $/;"	t
+clear	stack.c	/^void clear(Stack *ps){$/;"	f	typeref:typename:void
+display	main.c	/^void display(StackEntry x){$/;"	f	typeref:typename:void
+initStack	stack.c	/^void initStack(Stack *ps){$/;"	f	typeref:typename:void
+isEmpty	stack.c	/^bool isEmpty(const Stack *ps){$/;"	f	typeref:typename:bool
+isFull	stack.c	/^bool isFull(const Stack *ps){$/;"	f	typeref:typename:bool
+main	main.c	/^main(){$/;"	f	typeref:typename:int
+main.o	Makefile	/^main.o: main.c$/;"	t
+pop	stack.c	/^void pop(Stack *ps){$/;"	f	typeref:typename:void
+print	stack.c	/^void print(const Stack *ps, void (*pf)(StackEntry)){$/;"	f	typeref:typename:void
+push	stack.c	/^void push(StackEntry e, Stack *ps){$/;"	f	typeref:typename:void
+reverse_word	main.c	/^void reverse_word(StackEntry *s){$/;"	f	typeref:typename:void
+size	stack.c	/^int size(const Stack *ps){$/;"	f	typeref:typename:int
+stack.o	Makefile	/^stack.o: stack.c$/;"	t
+top	stack.c	/^StackEntry top(const Stack *ps){$/;"	f	typeref:typename:StackEntry
+top	stack.h	/^    int top;$/;"	m	struct:__anonadd2b0f10108	typeref:typename:int
+vector	Makefile	/^vector: main.o stack.o$/;"	t
