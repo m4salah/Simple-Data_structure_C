@@ -1,7 +1,7 @@
 # This is Simple Data Structure using C
 
 i'm learning now Data Structure in C because i love C
-for now i implemented
+-for now i implemented
 - vector like C++
 - Stack array-based implementation
 - Stack array-linkedList implementation
