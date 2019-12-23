@@ -12,4 +12,5 @@ typedef struct node {
 
 typedef struct top{
     StackNode *top;
+    int size;
 } Stack;

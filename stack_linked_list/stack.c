@@ -2,6 +2,7 @@
 
 void initStack(Stack *ps){
     ps->top = NULL;
+    ps->size = 0;
 }
 
 void push(StackEntry e, Stack *ps){
@@ -9,12 +10,14 @@ void push(StackEntry e, Stack *ps){
     pn->data = e;
     pn->next = ps->top;
     ps->top = pn;
+    ps->size++;
 }
 
 void pop(Stack *ps){
     StackNode *pn = ps->top;
     ps->top = ps->top->next;
     free(pn);
+    ps->size--;
 }
 
 StackEntry top(const Stack *ps){
@@ -30,15 +33,16 @@ bool isFull(const Stack *ps){
 }
 
 int size(const Stack *ps){
-    int size_stack = 0;
-    StackNode *pn = ps->top;
-    /** while(pn){
-      *     pn = pn->next;
+    /** int size_stack = 0;
+      * StackNode *pn = ps->top;
+      * [> while(pn){ <]
+      * [>     pn = pn->next; <]
+      * [>     size_stack++; <]
+      * [> } <]
+      * for(; pn; pn = pn->next)
       *     size_stack++;
-      * } */
-    for(; pn; pn = pn->next)
-        size_stack++;
-    return size_stack;
+      * return size_stack; */
+    return ps->size;
 }
 
 void clear(Stack *ps){
@@ -49,6 +53,7 @@ void clear(Stack *ps){
         free(ps->top);
         ps->top = pn;
     }
+    ps->size = 0;
 }
 
 void print(const Stack *ps, void(*pf)(StackEntry)){
