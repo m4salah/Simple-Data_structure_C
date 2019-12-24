@@ -17,6 +17,7 @@ typedef struct stack{
 Stack *initStack(int);
 void resize(Stack *,int);
 void push(StackEntry, Stack *);
+void pop(Stack *);
 void clear(Stack *);
 int size(const Stack*);
 int capacity(const Stack *);

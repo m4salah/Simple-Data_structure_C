@@ -28,6 +28,12 @@ push(StackEntry e, Stack *ps)
 }
 
 void
+pop(Stack *ps)
+{
+    ps->top--;
+}
+
+void
 clear(Stack *ps)
 {
     ps->capacity = 0;

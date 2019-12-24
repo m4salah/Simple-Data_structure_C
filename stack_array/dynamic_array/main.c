@@ -10,5 +10,7 @@ main()
     push(1, ps);
     push(9, ps);
     printf("%d...%d..%d\n", capacity(ps), size(ps), top(ps));
+    pop(ps);
+    printf("%d...%d..%d\n", capacity(ps), size(ps), top(ps));
     clear(ps);
 }
