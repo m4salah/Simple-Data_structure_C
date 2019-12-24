@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdbool.h>
 
+#ifndef STACH_H
+#define STACH_H
+
 #define MAXSIZE 101
 typedef char StackEntry;
 
@@ -18,3 +21,5 @@ StackEntry top(const Stack *);
 int size(const Stack *);
 void clear(Stack *);
 void print(const Stack *, void (*pf)(StackEntry));
+
+#endif

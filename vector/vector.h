@@ -2,6 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+#ifndef VECTOR_H
+#define VECTOR_H
+
 #define INIT_LENGTH 4
 #define MAX_SIZE 1024
 
@@ -22,3 +25,5 @@ void shrink_to_fit(int_Darray *);
 void Darray_free(int_Darray *);
 void print(int_Darray *);
 bool is_empty(const int_Darray *);
+
+#endif

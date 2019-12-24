@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+#ifndef STACH_H
+#define STACH_H
 typedef char StackEntry; 
 
 
@@ -25,3 +27,5 @@ bool isFull(const Stack *);
 int size(const Stack *);
 void clear(Stack *);
 void print(const Stack * ,void (*pf)(StackEntry));
+
+#endif
