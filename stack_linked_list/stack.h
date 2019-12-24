@@ -18,6 +18,7 @@ typedef struct top{
 } Stack;
 
 
+Stack initStacks();
 void initStack(Stack *);
 void push(StackEntry ,Stack *);
 void pop(Stack *);

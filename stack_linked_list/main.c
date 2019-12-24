@@ -12,8 +12,8 @@ display(StackEntry e)
 int
 main()
 {
-    Stack s;
-    initStack(&s);
+    Stack s = initStacks();
+    /** initStack(&s); */
     push(98, &s);
     push(100, &s);
     push(65, &s);
@@ -32,8 +32,8 @@ main()
 
 void reverse_word(StackEntry *s){
     int i = 0;
-    Stack stack;
-    initStack(&stack);
+    Stack stack=initStacks();
+    /** initStack(&stack); */
 
     while(s[i] != '\0'){
         push((StackEntry)(*(s+i)), &stack);

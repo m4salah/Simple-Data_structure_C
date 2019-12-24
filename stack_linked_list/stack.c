@@ -1,5 +1,9 @@
 #include "stack.h"
 
+Stack initStacks(){
+    return (Stack){NULL, 0};
+}
+
 void initStack(Stack *ps){
     ps->top = NULL;
     ps->size = 0;
