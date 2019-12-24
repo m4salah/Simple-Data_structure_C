@@ -14,5 +14,11 @@ typedef struct stack{
     int top;
 } Stack;
 
-Stack initStack(int);
+Stack *initStack(int);
+void resize(Stack *,int);
+void push(StackEntry, Stack *);
+void clear(Stack *);
+int size(const Stack*);
+int capacity(const Stack *);
+StackEntry top(const Stack *);
 #endif
