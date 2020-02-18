@@ -1,4 +1,4 @@
-# This is Simple Data Structure using C
+# This is Simple Data Structure using C.
 
 i'm learning now Data Structure in C because i love C.
 
